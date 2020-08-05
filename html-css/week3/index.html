@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="web design">
+    <meta name="keywords" contant="Jewelry, apparel, hand-bags, cosmetics, Shoes, Accessories">
+    <meta name="author" contant="Vartan Simoni">
+    <title> signupform</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <header>
+        <div class="container">
+           <div id="logo"> <h1><span class="highlight">Your</span>customtailor</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class=current><a href="index.html">Home</a></li>
+                    <li><a href="intouch.html">Intouch</a></li>
+                    <li><a href="preferences.html">preferences</a></li>
+                    <li><a href="payment.html">Payment</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="showcase">
+        <div class="container"> 
+        <h1>Sign up to yourcustomtailor.com</h1>
+        <p>We can’t wait to help you improve your life-style and gain the attention from people around
+        you!</p>
+        <p>Sign up below to save up to 70% on apparel, hand-bags and cosmetics. Our agents are busy
+        picking the best offers that match your preferences and style. Every week we will send you a
+        hand-picked selection - we just need to know a few details about your first…
+        </p>
+        
+        <h2>Step 1/4 - tell us who you are?</h2>
+        </div>
+    </section>
+    <section class="comp">
+       <p class="bar">progress</p>
+     
+        <div class="container-bar"><span class="bar c25"></span></div>
+    </section>
+<section class= "signup">
+ <div class="container">
+     <p>Nice to meet you. Let’s spend a minute to get to know each other? Please enter the following:</p>
+        <form name="form- details" action="#" method="get">
+            <div class="form-box">
+              <label for="fname"> First name*</label>
+                <input type="text" id="fname" name= "fname" placeholder="First name" required>
+            </div>
+            <div class="form-box">
+                <label for= "country">Country*</label>
+                    <select id="country" name="country" required>
+                        <option value="nothing">Select Country</option>
+                        <option value="Denmark">Denmark</option>
+                        <option value="usa">USA</option>
+                        <option value="canada">Canada</option>
+                        <option value="Sweden">Sweden</option>
+                        <option value="Norway">Norway</option>
+                    </select>
+            </div>
+            <div class="form-box">
+                <label for="staddress">Street address*</label>
+                  <input type="text" id="staddress" name= "staddress" placeholder="Street address" required>
+            </div>
+            
+            <div class="form-box">
+                <label for="lname">Last name*</label>
+                <input type="text" id="lname" name= "lname" placeholder="Last name" required>
+            </div>
+           <div></div>
+            <div class="form-box">
+                <label for="pcode">Post code*</label>
+                <input type="text" id="pcode" name= "pcode" placeholder="Post code*" required>
+            </div>
+
+
+        <div>
+           <div>
+            <labe for="wnews">Weekly news
+            <input type="checkbox" checked="checked" name="subscribe"> 
+            </label>
+            </div>
+        </div>
+        <div>
+            <p> Use the same address for billing and shipping? Uncheck below to fill out a separate shipping address.</p>
+            <label  for="myCheckbox "class="form-box">Shipping address <input type="checkbox" id="myCheck" checked="checked" onclick="myFunction()"> <span class="checkmark"></span></label>
+             </div> 
+        <div id="anotheraddress" style="display: none;">
+             <div class="form-box">
+            <label for="fname1"> First name*</label>
+              <input type="text" id="fname" name= "fname" placeholder="First name" required>
+          </div>
+          <div class="form-box">
+              <label for= "country1">Country*</label>
+                  <select id="country" name="country" required>
+                      <option value="nothing">Select Country</option>
+                      <option value="Denmark">Denmark</option>
+                      <option value="usa">USA</option>
+                      <option value="canada">Canada</option>
+                      <option value="Sweden">Sweden</option>
+                      <option value="Norway">Norway</option>
+                  </select>
+          </div>
+          <div class="form-box">
+              <label for="staddress1">Street address*</label>
+                <input type="text" id="staddress" name= "staddress" placeholder="Street address" required>
+          </div>
+          
+          <div class="form-box">
+              <label for="lname1">Last name*</label>
+              <input type="text" id="lname" name= "lname" placeholder="Last name" required>
+          </div>
+         <div></div>
+          <div class="form-box">
+              <label for="pcode1">Post code*</label>
+              <input type="text" id="pcode" name= "pcode" placeholder="Post code*" required>
+          </div>
+          </div>
+          <div>   
+            
+            <div>
+                <h5>profile description</h5>
+               <div>
+                    <div>
+                    Please provide a short
+                    description of yourself to be
+                    displayed on our social
+                    community pages.
+                    </div>
+                    <div>
+                        <textarea id="shdescrip" name="shdescrip" placeholder="Please provide a short description of yourself"
+                        ></textarea>
+
+                    </div>
+                </div>
+            </div>
+       </div>
+            
+        <div id="button">
+            <a href="Step2.html">Next Step
+            </a>
+        </div>
+
+        </form>
+        
+
+
+    </section>
+    <script>
+       function myFunction() {
+            var checkBox = document.getElementById("myCheck");
+            var anotheraddress = document.getElementById(anotheraddress);
+            if (checkBox.checked!=true) { 
+                document.getElementById('anotheraddress').style.display = "block";
+            }
+                else {  
+                    document.getElementById('anotheraddress').style.display = "none";
+            }
+         }
+    </script>
+ 
+    
+
+    </body>
+</body>
+</html>
