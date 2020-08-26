@@ -101,7 +101,7 @@ logOutSeriesText(seriesDurations);
 // when trying to make it more compact, I get various problems, so left it as is,
 // any advice how to make it not so cluncky would be much appreciated! <3
 
-console.log("\n");
+console.log("\n  ");
 
 ///
 // NOnoN0nOYes (NOTE TAKING APP)
