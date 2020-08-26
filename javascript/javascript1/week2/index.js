@@ -3,7 +3,7 @@
 function getFullname(firstName, surName, useFormalName) {
     const fullName = `${firstName} ${surName}`;
     if (firstName === "" || surName === "") {
-      alert("Please provide first and last names!");
+      alert("Please provide first and   last names!");
       return ""; 
     } else {
       return useFormalName ? `Lord ${fullName}` : fullName;
