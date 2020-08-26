@@ -2,7 +2,7 @@
 const yearOfBirth = 1992;
         let yearFuture = 2090;
         let age = yearFuture - yearOfBirth;
-        console.log("you will be " + age +"years old in" + yearFuture + ".");
+        console.log("you will be " + age +"years  old in" + yearFuture + ".");
  // A dog age calculator
  console.log["\n"]
  const dogYearOfBirth = 2019 ;
