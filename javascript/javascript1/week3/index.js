@@ -31,10 +31,10 @@ console.log("\n");
 function countTravelTime(travelInformation) {
   let travelTimeInteger =
     travelInformation.destinationDistance / travelInformation.speed;
-  let hours = Math.floor(travelTimeInteger);
-  let minutes = Math.floor((travelTimeInteger - hours) * 60);
+  let travelInhour = Math.floor(travelTimeInteger);
+  let minutes = Math.floor((travelTimeInteger - travelInhour) * 60);
 
-  return `The journey will take ${hours} hours and ${minutes} minutes.`;
+  return `The journey will take ${travelInhour} hours and ${minutes} minutes.`;
 }
 
 const travelInformation = {
